@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+    {% for sub,marks in name.items()%}
+        <tr>
+            <th>student subject {{sub}}</th>
+            <td>marks earned {{marks}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+<h1>the mark of englis is {{english}}</h1>
+{% for keys in name.keys() %}
+<ol>
+    <li>{{keys}}</li>
+</ol>
+{% endfor %}
+
+{% for values in name.values() %}
+<ol>
+    <li>{{values}}</li>
+</ol>
+{% endfor %}
+
+{% for values in python %}
+<ol>
+    <li>{{values}}</li>
+</ol>
+{% endfor %}
+</body>
+</html>
