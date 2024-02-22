@@ -1,0 +1,2 @@
+this line inserted by write method
+this line inserted by append method
